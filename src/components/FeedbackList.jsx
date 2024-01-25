@@ -4,7 +4,7 @@ import { useContext } from 'react';
 import PropTypes from 'prop-types'
 import FeedbackContext from '../context/FeedbackContext';
 
-function FeedbackList({  }) {
+function FeedbackList() {
     const {feedback} = useContext(FeedbackContext)
 
     if (!feedback || feedback.length === 0) {
